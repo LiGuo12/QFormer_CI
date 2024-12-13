@@ -1,0 +1,1 @@
+###Human: <Img><ImageHere></Img> <Report><ReportHere></Report> Instruction: Rewrite the sentences in the report according to the image. Delete irrelevant descriptions in the report. Supply missing descriptions in the report. Write it as informative as possible. Keep the writing style unchanged. ###Assistant:

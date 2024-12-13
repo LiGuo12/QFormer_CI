@@ -1,0 +1,20 @@
+datasets:
+  iu_xray:
+    data_type: images
+    build_info:
+      annotations:
+        storage: 'E:/iu_xray/iu_xray/annotation.json'
+      images:
+        storage: 'E:/iu_xray/iu_xray/images'
+    vis_processor:
+        train:
+          name: "blip2_image_train"
+          image_size: 224
+        eval:
+          name: "blip_image_eval"
+          image_size: 224
+    text_processor:
+        train:
+          name: "blip_caption"
+        eval:
+          name: "blip_caption"
