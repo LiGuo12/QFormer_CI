@@ -52,3 +52,19 @@ Update the following paths in `lavis/projects/blip2/train/pretrain_stage1_ci.yam
 ### Running Evaluation
 ```bash
 torchrun --nproc_per_node=4 train.py --cfg-path lavis/projects/blip2/train/pretrain_stage1_ci.yaml
+
+<div align=center>
+
+| Model             |Year  | B@1   | B@2   | B@3   | B@4   | MTR   | RG-L  |   CD  |
+|:-----:            |:---: |:---:  |:---:  |:---:  |:---:  |:---:  |:---:  |:---:  |
+| CDGPT2            | 2021 | 0.387 | 0.245 | 0.166 | 0.111 | 0.163 | 0.289 |0.257  |
+| MMTN              | 2023 | 0.486 | 0.321 | 0.232 | 0.175 |   -   | 0.375 | 0.361 |
+| CvT2DistilGP2     | 2023 | 0.382 | 0.245 | 0.169 | 0.124 | 0.152 | 0.285 | 0.361 |
+| METransformer     | 2023 | 0.483 | 0.322 | 0.228 | 0.172 | 0.192 | 0.380 | 0.435 |
+| SILC              | 2024 | 0.472 | 0.321 | 0.234 | 0.175 | 0.192 | 0.379 | 0.368 |
+| PromptMGR         | 2024 | 0.401 |   -   |   -   | 0.098 | 0.160 | 0.281 |   -   |
+| BoostrapLLMs      | 2024 | <ins>0.499</ins> | <ins>0.323</ins> | <ins>0.238</ins> | <ins>0.184</ins> | **0.208** | <ins>0.390</ins> |   -   |
+| VLCI              | 2024 | **0.505** | **0.334** | **0.245** | **0.190** | <ins>0.210</ins> | **0.394** | **0.592** |
+| Ours              | 2024 | 0.329 | 0.206 | 0.148 | 0.114 | 0.148 | 0.258 | <ins>0.491</ins> |
+
+</div>
