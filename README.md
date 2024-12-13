@@ -8,6 +8,12 @@ This repository presents a novel approach to address co-occurrence bias in medic
 - Enhanced handling of feature correlations in medical imaging
 - Improved accuracy and reduced bias in report generation
 
+<div align=center>
+
+<img src="figure.png" width="1024" />
+
+</div>
+
 ## Repository Structure
 We added a front-door causal intervention module based on the [BLIP-2](https://github.com/salesforce/LAVIS/tree/main/projects/blip2) Q-Former. Below is our modified code.
 ### Model Components
