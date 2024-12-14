@@ -58,7 +58,7 @@ Update the following paths in `lavis/projects/blip2/train/pretrain_stage1_ci.yam
 ### Running Evaluation
 ```bash
 torchrun --nproc_per_node=4 train.py --cfg-path lavis/projects/blip2/train/pretrain_stage1_ci.yaml
-
+```
 <div align=center>
 
 | Model             |Year  | B@1   | B@2   | B@3   | B@4   | MTR   | RG-L  |   CD  |
