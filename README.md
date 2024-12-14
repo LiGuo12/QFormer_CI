@@ -42,16 +42,16 @@ We added a front-door causal intervention module based on the [BLIP-2](https://g
    - Download compressed features: [Download Link](https://drive.google.com/file/d/1oP1eSasTT_rZfRIuZjJZ5xUKgYKl3JpJ/view?usp=sharing)
 
 2. **Pre-trained Models**
-   - Q-Former-CI model: [Download Link](https://drive.google.com/file/d/1YEgYJO5bUJ9L4uWlN7NtkfOFKb3lt_Uc/view?usp=sharing)
+   - Our Q-Former-CI model: [Download Link](https://drive.google.com/file/d/1YEgYJO5bUJ9L4uWlN7NtkfOFKb3lt_Uc/view?usp=sharing)
    - Medical MAE image encoder: [Download Link](https://drive.google.com/file/d/1eZXcoeMJAVjVJUNio2tCyHgiegaa-Vqr/view)
 
 ### Configuration
 Update the following paths in `lavis/projects/blip2/train/pretrain_stage1_ci.yaml`:
-- Line 10: Path to pre-trained Q-Former-CI
+- Line 10: Path to our pre-trained Q-Former-CI
 - Line 12: Path to pre-trained Medical MAE image encoder
 - Line 20: Path to compressed dataset features
 - Lines 23,25,27: Paths to IU-Xray dataset annotations
-- Line 29: Path to image folder
+- Line 29: Path to IU-Xray dataset image folder
 
 ## Evaluation
 
